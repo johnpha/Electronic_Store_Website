@@ -1,0 +1,139 @@
+:root {
+    /* dat ten bien cho mau */
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+}
+.app{
+    overflow: hidden;
+}
+.gird {
+    width: 1226px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gird__full-width {
+    width: 100%;
+}
+
+.gird__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+/* Button stlye */
+.btn{
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+}
+.btn-size-s{
+    height: 32px;
+    font-size: 14px;
+    padding: 0px 16px;
+}
+.btn.btn-normal:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.btn.btn-primary{
+    background-color:#dd3907;
+    color: white;
+}
+.btn.btn-primary.btn-add{
+    min-width: 142px;
+    height: 36px;
+}
+
+.btn:hover,
+.btn:active {
+    /* hieu ung di chuyen chuot thanh mau dam hon */
+    background-color: #d35400;
+}
+.btn-cart{
+    width: 25px;
+    height: 25px;
+    margin: 0 4px;
+}
+/* phong to len  */
+@keyframes growth {
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* Selection  */
+.select-input{
+    position: relative;
+    height: 34px;
+    padding: 10px 12px;
+    min-width: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+.select-input-icon{
+    font-size: 1.4rem;
+    color: rgb(131,131,131);
+    position: relative;
+    top: 1px;
+}
+.select-input-list{
+    position: absolute;
+    border-radius: 2px;
+    background-color: white;
+    top: 35px;
+    list-style: none;
+    min-width: 200px;
+    right: 0px;
+    display: none;
+    z-index: 1;
+}
+.select-input-link{
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 10px;
+    color: black;
+}
+.select-input-link:hover{
+    color:#d63302;
+}
+.select-input:hover .select-input-list{
+    display: block;
+}
